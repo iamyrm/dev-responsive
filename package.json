@@ -1,0 +1,39 @@
+{
+  "name": "dev-responsive",
+  "displayName": "dev-responsive",
+  "description": "Ensure your frontend designs look perfect on every device with the Dev Responsive extension for VS Code. This tool allows developers to instantly preview their web interfaces on various devices directly within the editor. Quickly check how your layout adapts to different screen sizes, from mobile phones to tablets and desktops, without leaving your development environment. Whether you're fine-tuning a responsive design or just checking how your site looks across different devices, Dev Responsive streamlines the process, saving you time and improving your workflow.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "dev-responsive.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.7",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.92.0",
+    "@vscode/test-cli": "^0.0.9",
+    "@vscode/test-electron": "^2.4.0",
+    "eslint": "^8.57.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
+}
